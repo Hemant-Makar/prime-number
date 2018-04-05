@@ -1,31 +1,25 @@
 #include <stdio.h>
-#include <conio.h>
-/*
-- This function is used for checking the number is prime or not a prime number.
-- Intput: number - Number to check for number is prime or not a prime.
-- Return: 1 If given number is prime.
-	: 0 If given number is not prime.
-*/
+
 int isPrimeNumber(int number) {
-  int isPrimeNumberFlag = 0;
-  for (int counter = 2; counter < number / 2; counter++) {
-    if (number%counter == 0) {
-      isPrimeNumberFlag = 1
-     break;
+  for (int counter = 2; counter <= number / 2; counter++) {
+   if (number%counter == 0) {
+   return 0;
     }
    }
-return isPrimeNumber;
+return 1;
 }
 
-int main(int argc, char *argv) {
+int main(int argc, char *argvi[]) {
 while(1) {
-	int number = 0
-	printf("Please enter the any number:");
-	scanf("%d", &number);
-if (isPrimeNumber(number)) {
-printf("Number %d is Prime Number", number);
+        int number = 0;
+        printf("\nPlease enter the any number:");
+        scanf("%d", &number);
+if (isPrimeNumber(number) == 1) {
+printf("Number %d is a prime number", number);
 } else {
-printf("Number %d is Prime Number", number);
+printf("Number %d is Not a prime number", number);
 }
-return 0
 }
+return 0;
+}
+
