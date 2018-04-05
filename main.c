@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <conio.h>
-
+/*
+- This function is used for checking the number is prime or not a prime number.
+- Intput: number - Number to check for number is prime or not a prime.
+- Return: 1 If given number is prime.
+	: 0 If given number is not prime.
+*/
 int isPrimeNumber(int number) {
   int isPrimeNumberFlag = 0;
   for (int counter = 2; counter < number / 2; counter++) {
